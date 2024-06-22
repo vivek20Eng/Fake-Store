@@ -13,6 +13,7 @@
     "@skeletonlabs/skeleton": "^2.10.1",
     "@skeletonlabs/tw-plugin": "^0.4.0",
     "@sveltejs/vite-plugin-svelte": "^3.1.1",
+    "@tailwindcss/typography": "^0.5.13",
     "@tsconfig/svelte": "^5.0.4",
     "@types/node": "^20.14.7",
     "autoprefixer": "^10.4.19",
@@ -22,7 +23,9 @@
     "tailwindcss": "^3.4.4",
     "tslib": "^2.6.3",
     "typescript": "^5.2.2",
-    "vite": "^5.3.1",
-    "@tailwindcss/typography": "^0.5.13"
+    "vite": "^5.3.1"
+  },
+  "dependencies": {
+    "svelte-carousel": "^1.0.25"
   }
 }
