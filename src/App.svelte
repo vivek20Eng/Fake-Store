@@ -1,9 +1,9 @@
 <script>
-  import FsCarousel from "./components/FSCarousel.svelte";
   import FSHeader from "./components/FSHeader.svelte"
+  import FsHomePage from "./components/FSHomePage.svelte";
 </script>
-<section class="mx-[5rem]">
+<section>
   <FSHeader/>
-  <FsCarousel/>
+  <FsHomePage/>
 
 </section>
