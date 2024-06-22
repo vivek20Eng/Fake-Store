@@ -6,17 +6,17 @@
   
     let carousel;
   
-    const handleNextClick = () => {
-      carousel.goToNext();
-    }
+    // const handleNextClick = () => {
+    //   carousel.goToNext();
+    // }
   </script>
   
-  <section class="carousel bg-slate-500/20">
-    <Carousel infinite autoplay swiping autoplayDuration="1500" bind:this={carousel}>
-      <img src={banner_one} alt="banner" />
-      <img src={banner_two} alt="banner" />
-      <img src={banner_three} alt="banner" />
+  <section class="carousel bg-[--primary-black]">
+    <Carousel infinite autoplay swiping autoplayDuration="1500">
+      <img src={banner_one} alt="banner" class="h-[20rem] object-contain" />
+      <img src={banner_two} alt="banner" class="h-[20rem] object-contain"/>
+      <img src={banner_three} alt="banner" class="h-[20rem] object-contain"/>
     </Carousel>
   </section>
-  <button on:click={handleNextClick}>Next</button>
+  <!-- <button on:click={handleNextClick}>Next</button> -->
   

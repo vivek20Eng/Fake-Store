@@ -8,6 +8,7 @@
   gridColumns="grid-cols-3"
   slotDefault="place-self-center"
   slotTrail="place-content-end"
+  class="border-b border-[--primary-text px-12"
 >
   <svelte:fragment slot="lead">
     <img
@@ -18,7 +19,7 @@
     />
   </svelte:fragment>
 
-  <ul class="flex justify-center gap-2 text-[--primary-black]">
+  <ul class="flex justify-center gap-2 text-[--primary-black] text-lg">
     <li
       class="duration-200 hover:bg-orange-500/70 hover:shadow-lg hover:text-white px-4 py-2 rounded cursor-pointer"
     >
