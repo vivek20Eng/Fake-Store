@@ -1,5 +1,7 @@
 <script>
+  import FSHeader from "./components/FSHeader.svelte"
 </script>
 <section class="mx-[5rem]">
- <h1>Fake-Store</h1>
+  <FSHeader/>
+
 </section>
