@@ -1,47 +1,113 @@
-# Svelte + TS + Vite
+# Fake Store
 
-This template should help get you started developing with Svelte and TypeScript in Vite.
+A simple web application that fetches and displays products from the Fake Store API. The application allows users to view products, their details, and add them to a cart.
 
-## Recommended IDE Setup
+## Table of Contents
 
-[VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
+- [Demo](#demo) [<sup>↑</sup>](#fake-store)
+- [Features](#features) [<sup>↑</sup>](#fake-store)
+- [Technologies](#technologies) [<sup>↑</sup>](#fake-store)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites) [<sup>↑</sup>](#getting-started)
+  - [Installation](#installation) [<sup>↑</sup>](#getting-started)
+  - [Running the Application](#running-the-application) [<sup>↑</sup>](#getting-started)
+- [Usage](#usage) [<sup>↑</sup>](#usage)
+- [API Reference](#api-reference) [<sup>↑</sup>](#api-reference)
 
-## Need an official Svelte framework?
+## Demo
 
-Check out [SvelteKit](https://github.com/sveltejs/kit#readme), which is also powered by Vite. Deploy anywhere with its serverless-first approach and adapt to various platforms, with out of the box support for TypeScript, SCSS, and Less, and easily-added support for mdsvex, GraphQL, PostCSS, Tailwind CSS, and more.
+Check out the live demo: [Fake Store Demo](https://fakestoreapi.com)
 
-## Technical considerations
+[<sup>↑</sup> Go to Top](#fake-store) 🔝
 
-**Why use this over SvelteKit?**
+## Features
 
-- It brings its own routing solution which might not be preferable for some users.
-- It is first and foremost a framework that just happens to use Vite under the hood, not a Vite app.
+- 🛍️ Display a list of products
+- 🔍 View product details
+- 🛒 Add products to your cart
+- 📱 Simple and responsive UI
 
-This template contains as little as possible to get started with Vite + TypeScript + Svelte, while taking into account the developer experience with regards to HMR and intellisense. It demonstrates capabilities on par with the other `create-vite` templates and is a good starting point for beginners dipping their toes into a Vite + Svelte project.
+[<sup>↑</sup> Go to Top](#fake-store) 🔝
 
-Should you later need the extended capabilities and extensibility provided by SvelteKit, the template has been structured similarly to SvelteKit so that it is easy to migrate.
+## Technologies
 
-**Why `global.d.ts` instead of `compilerOptions.types` inside `jsconfig.json` or `tsconfig.json`?**
+- 🌐 ![HTML](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+- 🎨 ![CSS](https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3)
+- ✨ ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+- 🔧 ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+- 🐍 ![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
+- 🌀 ![Tailwind CSS](https://img.shields.io/badge/-TailwindCSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)
+- 🌟 ![Svelte](https://img.shields.io/badge/-Svelte-FF3E00?style=flat-square&logo=svelte&logoColor=white)
+- 🛠️ ![Fake Store API](https://img.shields.io/badge/-Fake%20Store%20API-000000?style=flat-square&logo=api&logoColor=white)
+- 📄 ![Document](https://img.shields.io/badge/-Document-0A66C2?style=flat-square&logo=readthedocs&logoColor=white)
 
-Setting `compilerOptions.types` shuts out all other types not explicitly listed in the configuration. Using triple-slash references keeps the default TypeScript setting of accepting type information from the entire workspace, while also adding `svelte` and `vite/client` type information.
+[<sup>↑</sup> Go to Top](#fake-store) 🔝
 
-**Why include `.vscode/extensions.json`?**
+## Getting Started
 
-Other templates indirectly recommend extensions via the README, but this file allows VS Code to prompt the user to install the recommended extension upon opening the project.
+Follow these instructions to get a copy of the project up and running on your local machine.
 
-**Why enable `allowJs` in the TS template?**
+### Prerequisites
 
-While `allowJs: false` would indeed prevent the use of `.js` files in the project, it does not prevent the use of JavaScript syntax in `.svelte` files. In addition, it would force `checkJs: false`, bringing the worst of both worlds: not being able to guarantee the entire codebase is TypeScript, and also having worse typechecking for the existing JavaScript. In addition, there are valid use cases in which a mixed codebase may be relevant.
+You will need the following software installed on your machine:
 
-**Why is HMR not preserving my local component state?**
+- [Node.js](https://nodejs.org/) (includes npm)
 
-HMR state preservation comes with a number of gotchas! It has been disabled by default in both `svelte-hmr` and `@sveltejs/vite-plugin-svelte` due to its often surprising behavior. You can read the details [here](https://github.com/rixo/svelte-hmr#svelte-hmr).
+[<sup>↑</sup> Go to Top](#fake-store) 🔝
 
-If you have state that's important to retain within a component, consider creating an external store which would not be replaced by HMR.
+### Installation
 
-```ts
-// store.ts
-// An extremely simple external store
-import { writable } from 'svelte/store'
-export default writable(0)
-```
+1. **Clone the repository:**
+
+    ```sh
+    git clone https://github.com/yourusername/fake-store.git
+    ```
+
+2. **Navigate to the project directory:**
+
+    ```sh
+    cd fake-store
+    ```
+
+3. **Install dependencies:**
+
+    ```sh
+    npm install
+    ```
+
+4. **Start the development server:**
+
+    ```sh
+    npm start
+    ```
+
+5. **Open your browser and visit:**
+
+    ```sh
+    http://localhost:3000
+    ```
+
+[<sup>↑</sup> Go to Top](#fake-store) 🔝
+
+## Usage
+
+- Browse the list of products on the homepage.
+- Click on a product to view its details.
+- Add products to your cart.
+
+[<sup>↑</sup> Go to Top](#fake-store) 🔝
+
+## API Reference
+
+The application uses the [Fake Store API](https://fakestoreapi.com/) to fetch product data.
+
+### Endpoints
+
+- Get all products: `GET /products`
+- Get single product: `GET /products/{id}`
+- Get all categories: `GET /products/categories`
+- Get products in a category: `GET /products/category/{category}`
+
+For more details, visit the API ![documentation](https://img.shields.io/badge/-documentation-0A66C2?style=flat-square&logo=readthedocs&logoColor=white).
+
+[<sup>↑</sup> Go to Top](#fake-store) 🔝
