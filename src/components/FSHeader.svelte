@@ -19,21 +19,27 @@
     />
   </svelte:fragment>
 
-  <ul class="flex justify-center gap-2 text-[--primary-black] text-lg">
+  <ul class="sm:flex justify-center gap-2 text-[--primary-black] text-lg hidden">
     <li
-      class="duration-200 hover:bg-orange-500/70 hover:shadow-lg hover:text-white px-4 py-2 rounded cursor-pointer"
+      class="duration-200 hover:bg-[--primary-btn-color] hover:shadow-lg hover:text-white px-4 py-2 rounded cursor-pointer"
     >
       Home
     </li>
     <li
-      class="duration-200 hover:bg-orange-500/70 hover:shadow-lg hover:text-white px-4 py-2 rounded cursor-pointer"
+      class="duration-200 hover:bg-[--primary-btn-color] hover:shadow-lg hover:text-white px-4 py-2 rounded cursor-pointer"
     >
       Sign up
     </li>
   </ul>
 
   <svelte:fragment slot="trail">
-    <div class="flex items-center justify-end space-x-4 w-3/4">
+<!-- Font Awesome Icon for the hamburger menu (bars icon) -->
+ <div class="block sm:hidden">
+
+   <i class="fa-solid fa-bars cursor-pointer text-xl "></i>
+ </div>
+
+    <div class="sm:flex items-center justify-end space-x-4 w-3/4 hidden">
       <div class="relative flex-grow">
         <div
           class="text-xl text-[--primary-text] gap-5 flex items-center w-full"
