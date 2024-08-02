@@ -16,7 +16,7 @@ A simple web application that fetches and displays products from the Fake Store 
 
 ## Demo
 
-Check out the live demo: [Fake Store Demo](https://fakestoreapi.com)
+Check out the live demo: [Fake Store Demo](https://fake-store-hazel.vercel.app/)
 
 [<sup>↑</sup> Go to Top](#fake-store) 🔝
 
